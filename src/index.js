@@ -6,10 +6,14 @@ class Square extends React.Component {
   render() {
     return (
       /*
+      2) MAKING AN INTERACTIVE COMPONENT: 
 
+      Let’s fill the Square component with an “X” when we click it.
+      First, change the button tag that is returned from the Square
+      component’s render() function:
       */
-      <button className="square">
-        {/* TODO: this.props.value */}
+      <button className="square" onClick={function() {alert('click')}}>
+        {this.props.value}
       </button>
     );
   }
@@ -28,7 +32,7 @@ class Board extends React.Component {
 
     return <Square value={i}/>
     */
-    return <Square /*value={i}*//>;
+    return <Square value={i}/>;
   }
 
   render() {
