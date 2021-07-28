@@ -28,7 +28,7 @@ class Board extends React.Component {
 
     return <Square value={i}/>
     */
-    return <Square value={i}/>;
+    return <Square /*value={i}*//>;
   }
 
   render() {
