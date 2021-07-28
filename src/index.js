@@ -3,6 +3,28 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 class Square extends React.Component {
+  /*
+  3) ADDING STATE
+  To “remember” things, components use state.
+
+  React components can have state by setting this.state in their
+  constructors. 
+
+  this.state should be considered as private to a React component
+  that it’s defined in. Let’s store the current value of the Square
+  in this.state, and change it when the Square is clicked.
+  */
+
+  // 3.a: add constructor to initialize state
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: null,
+    };
+  }
+
+  // 3.b change the Square classes render method to display current state's
+  // when clicked
   render() {
     return (
       /*
